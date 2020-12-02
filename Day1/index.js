@@ -201,9 +201,9 @@ const numbers = [
   "1535"
 ];
 
-numbers.map((value1, index1, array1) => {
-  array1.map((value2, index2, array2) => {
-    array2.map((value3) => {
+numbers.map((value1) => {
+  numbers.map((value2) => {
+    numbers.map((value3) => {
       let suma = parseInt(value1) + parseInt(value2) + parseInt(value3);
       let mult = parseInt(value1) * parseInt(value2) * parseInt(value3);
       if (suma === 2020) {
