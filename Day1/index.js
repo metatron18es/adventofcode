@@ -198,7 +198,7 @@ const numbers = [
   "1672",
   "1813",
   "1546",
-  "1535"
+  "1535",
 ];
 
 numbers.map((value1) => {
@@ -207,9 +207,9 @@ numbers.map((value1) => {
       let suma = parseInt(value1) + parseInt(value2) + parseInt(value3);
       let mult = parseInt(value1) * parseInt(value2) * parseInt(value3);
       if (suma === 2020) {
-        console.log(value1 + ' + ' + value2 + ' + ' + value3 + ' = ' + suma);
-        console.log(value1 + ' x ' + value2 + ' x ' + value3 + ' = ' + mult);
+        console.log(value1 + " + " + value2 + " + " + value3 + " = " + suma);
+        console.log(value1 + " x " + value2 + " x " + value3 + " = " + mult);
       }
-    })
-  })
-})
+    });
+  });
+});

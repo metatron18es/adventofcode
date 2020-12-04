@@ -321,40 +321,42 @@ const trees = [
   ".#..##..##..#.....#...#.#.....#",
   "...#..#.#.....#..#..##....##..#",
   "..#....#.....#........#.....#..",
-  "#.#.#..#..#.#..#...###.#.#....#"
+  "#.#.#..#..#.#..#...###.#.#....#",
 ];
 
 const jumps = [
   {
     rowJump: 1,
-    colJump: 1
+    colJump: 1,
   },
   {
     rowJump: 1,
-    colJump: 3
+    colJump: 3,
   },
   {
     rowJump: 1,
-    colJump: 5
+    colJump: 5,
   },
   {
     rowJump: 1,
-    colJump: 7
+    colJump: 7,
   },
   {
     rowJump: 2,
-    colJump: 1
+    colJump: 1,
   },
-]
+];
 
 const countTrees = (rowJump, colJump) => {
-  let treesNumber = 0, row = 0, col = 0;
+  let treesNumber = 0,
+    row = 0,
+    col = 0;
   const rowMaxpos = trees[0].length;
 
   do {
     const element = trees[row];
-    const pos = col % rowMaxpos
-    if(element[pos] === '#') {
+    const pos = col % rowMaxpos;
+    if (element[pos] === "#") {
       treesNumber++;
     }
     row += rowJump;
@@ -362,14 +364,14 @@ const countTrees = (rowJump, colJump) => {
   } while (row < trees.length);
 
   return treesNumber;
-}
+};
 
 const totalTrees = () => {
   let total = 1;
-  jumps.forEach(jump => {
-    total *= countTrees(jump.rowJump,jump.colJump);
+  jumps.forEach((jump) => {
+    total *= countTrees(jump.rowJump, jump.colJump);
   });
   return total;
-} 
+};
 
 console.log(totalTrees());
