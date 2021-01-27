@@ -1,0 +1,71 @@
+<html>
+	<head></head>
+	<body>
+		<h3><u>DATOS PERSONALES</u></H3>
+		
+		<TABLE>
+		<tr>
+			<th><label for="nombre"><u>NOMBRE</u></label></th>
+			<th><label for="apellidos"><u>APELLIDOS</u></label></th>
+			<th><label for="direccion"><u>DIRECCION</u></label></th>
+		</tr>
+		<tr>
+			<td><input type=text name="nombre" id="nombre" size=20></td>
+			<td><input type=text name="apellidos" id="apellidos" size=20></td>
+			<td><input type=text name="direccion" id="direccion" size=20 value="Bilbao"></td>
+		</tr>
+		<tr>
+			<th><u>IDIOMAS</u></th>
+			<th><u> EDAD</u></th>
+			<th><u>ESTADO CIVIL</u></th>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table>
+					<tr>
+						<td><label for="ingles">Ingles</label></td>
+						<td><input type=checkbox name="ingles" id="ingles"></td>
+					</tr>
+					<tr>
+						<td><label for="frances">Frances</label></td>
+						<td><input type=checkbox name="frances" id="frances"></td>
+					</tr>
+					<tr>
+						<td><label for="aleman">Aleman</label></td>
+						<td><input type=checkbox name="aleman" id="aleman"></td>
+					</tr>
+				</table>
+			</td>
+			<td valign="top">
+				<table>
+					<tr>
+						<td><label for="edad18">Menos de 18:</label></td>
+						<td><input type=radio name="edad" id="edad18" value="18"></td>
+					</tr>
+					<tr>
+						<td><label for="edad19-39">Entre 19 y 39:</label></td>
+						<td><input type=radio name="edad" id="edad19-39" value="19-39"></td>
+					</tr>
+					<tr>
+						<td><label for="edad30-50">Entre 30 y 50:</label></td>
+						<td><input type=radio name="edad" id="edad30-50" value="30-50"></td>
+					</tr>
+					<tr>
+						<td><label for="edad50">Mas de 50:</label></td>
+						<td><input type=radio name="edad" id="edad50" value="+50"></td>
+					</tr>
+				</table>
+			</td>
+			<td valign="top">
+				<center>
+					<select name="EstadoCivil">
+						<option value="Soltero">Soltero/a</option>
+						<option value="Casado">Casado/a</option>
+						<option value="Divorciado">Divorciado/a</option>
+						<option value="Viudo">Viudo/a</option>
+					</select>
+				</center>
+			</td>
+		</tr>
+	</body>
+</html>
